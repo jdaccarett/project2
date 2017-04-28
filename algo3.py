@@ -1,7 +1,7 @@
 #Dynamic Programming - Coin Change Problem
 #Andrew Kim - CS 325
 
-def CoinChangeDP(v, A):
+def changeDP(v, A):
     numCoins = [0 if idx == 0 else float("inf") for idx in range(A + 1)]            #create array that holds number of coins for solution
     lastCoinAdded = [-1 for _ in range(A + 1)]                                      #create array that holds the last coin added
     C = [0 for _ in range(len(v))]                                                  #initiate array c (answer array) with 0
