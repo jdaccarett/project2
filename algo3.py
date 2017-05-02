@@ -2,12 +2,12 @@
 #Andrew Kim - CS 325
 
 def changeDP(v, A):
-    numCoins = [0 if idx == 0 else float("inf") for idx in range(A + 1)]            #create array that holds number of coins for solution - set 0 equal to 0 and the rest = inf
-    lastCoinAdded = [-1 for _ in range(A + 1)]                                      #create array that holds the last coin added - set values as -1
-    C = [0 for _ in range(len(v))]                                                  #initiate array c (answer array) with 0
+    numCoins = [0 if idx == 0 else float("inf") for idx in xrange(A + 1)]            #create array that holds number of coins for solution - set 0 equal to 0 and the rest = inf
+    lastCoinAdded = [-1 for _ in xrange(A + 1)]                                      #create array that holds the last coin added - set values as -1
+    C = [0 for _ in xrange(len(v))]                                                  #initiate array c (answer array) with 0
 
-    for j in range(len(v)):                                                         #for every different coin value
-        for i in range(1, A + 1):                                                   #for every value up to the answer value
+    for j in xrange(len(v)):                                                         #for every different coin value
+        for i in xrange(1, A + 1):                                                   #for every value up to the answer value
             coin = v[j]                                                             
             if i >= v[j]:                                                           #if the value is greater than the coin value
                 if numCoins[i] > 1 + numCoins[i - coin]:                            #if the number of coins is greater than 1 + the number of coins from previous value
