@@ -45,7 +45,7 @@ def main():
     coinAmount = [15, 29, 31]
 
 
-    for x in range(1, 4):
+    for x in xrange(1, 4):
         algoID = x
 
         if (algoID == 1):
@@ -59,7 +59,7 @@ def main():
             getchange = getchange1
 
         # Loop through test cases
-        #for x in range(0, len(testCase)):
+        #for x in xrange(0, len(testCase)):
          #   print("ALGO ID:", algoID)
           #  cArray, m = getchange(testCase[x], coinAmount[x])
            # print(cArray)
@@ -69,7 +69,7 @@ def main():
         # Loop for each integer value of A in [1, 2, 3, …, 50] in (test case V1)
         print("ALGO ID:", algoID, "TESTCASE V1,V2,V3  A[1,2,3..50]")
         print("____________________________________________ ")
-        for amount in range(1, 51):
+        for amount in xrange(1, 51):
             if algoID > 0:
                 # Values of V1
                 cArray, m = getchange(questhree_Testcase[0], amount)
@@ -79,7 +79,7 @@ def main():
         # Loop for each integer value of A in [1, 2, 3, …, 50] in (test case V2)
         print("ALGO ID:", algoID, "TESTCASE V1,V2,V3  A[1,2,3..50]")
         print("____________________________________________ ")
-        for amount in range(1, 51):
+        for amount in xrange(1, 51):
             if algoID > 0:
                 # Values of V2
                 cArray, m = getchange(questhree_Testcase[1], amount)
@@ -89,7 +89,7 @@ def main():
         # Loop for each integer value of A in [1, 2, 3, …, 50] in (test case V3)
         print("ALGO ID:", algoID, "TESTCASE V1,V2,V3  A[1,2,3..50]")
         print("____________________________________________ ")
-        for amount in range(1, 51):
+        for amount in xrange(1, 51):
             if algoID > 0:
                 # Values of V2
                 cArray, m = getchange(questhree_Testcase[2], amount)
@@ -102,7 +102,7 @@ def main():
         print("ALGO ID:", algoID, "TESTCASE V1,V2,V3  A[2000,2001,2002,…2200]")
         print("____________________________________________")
         #V1 case
-        for amount in range(2000, 2200):
+        for amount in xrange(2000, 2200):
             #Values of V1
             cArray, m = getchange(questhree_Testcase[0], amount)
             print(cArray)
@@ -111,7 +111,7 @@ def main():
         print("ALGO ID:", algoID, "TESTCASE V1,V2,V3  A[2000,2001,2002,…2200]")
         print("____________________________________________")
         #V2 case
-        for amount in range(2000, 2200):
+        for amount in xrange(2000, 2200):
             # Values of V2
             cArray, m = getchange(questhree_Testcase[1], amount)
             print(cArray)
@@ -120,7 +120,7 @@ def main():
         print("ALGO ID:", algoID, "TESTCASE V1,V2,V3  A[2000,2001,2002,…2200]")
         print("____________________________________________")
         #V3 Case
-        for amount in range(2000, 2200):
+        for amount in xrange(2000, 2200):
             # Values of V3
             cArray, m = getchange(questhree_Testcase[2], amount)
             print(cArray)
