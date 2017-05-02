@@ -31,7 +31,7 @@ def main():
 
 
 
-    for x in range(1, 4):
+    for x in xrange(1, 4):
         algoID = x
 
         if (algoID == 1):
@@ -46,21 +46,21 @@ def main():
 
 
         # Loop for each integer value of A in [1, 2, 3, …, 50] in test cases V1, V2 and V3
-        for amount in range(1, 51):
+        for amount in xrange(1, 51):
             if algoID > 0:
                 start = time.clock()
                 getchange(questhree_Testcase[0], amount)
                 elapsed_time = (time.clock() - start)
                 print("Algoid:", algoID, 'Amount = :', amount, ' ', 'Time:', elapsed_time)
 
-        for amount in range(1, 51):
+        for amount in xrange(1, 51):
             if algoID > 0:
                 start = time.clock()
                 getchange(questhree_Testcase[1], amount)
                 elapsed_time = (time.clock() - start)
                 print("Algoid:", algoID, 'Amount = :', amount, ' ', 'Time:', elapsed_time)
 
-        for amount in range(1, 51):
+        for amount in xrange(1, 51):
             if algoID >= 0:
                 start = time.clock()
                 getchange(questhree_Testcase[2], amount)
