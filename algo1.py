@@ -1,7 +1,6 @@
-   #Divide and Conquer - Coin Change Problem
-   #Jacqueline Francik - CS 325 
-
-   def changeslow(V, A):
+def changeslowHelper(V, A):
+    
+    def changeslow(V, A):
 
         minCoins = [0 for c in V]
         minCoins[0] = A
@@ -22,3 +21,12 @@
     
     return (finalCoins, coinSum)
 
+
+    
+
+
+
+
+coins =[1,2,3,4]
+
+print (changeslowHelper(coins, 11))
