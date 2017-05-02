@@ -1,0 +1,30 @@
+Running Algorithm: Change Slow 
+Input:[1 2 5]
+Coin Array: [0 0 2]
+Number of Coins: 2
+
+Running Algorithm: Change Greedy 
+Input:[1 2 5]
+Coin Array: [0 0 2]
+Number of Coins: 2
+
+Running Algorithm: Change DP 
+Input:[1 2 5]
+Coin Array: [0 0 2]
+Number of Coins: 2
+
+Running Algorithm: Change Slow 
+Input:[1 3 7 26]
+Coin Array: [1 0 3 0]
+Number of Coins: 4
+
+Running Algorithm: Change Greedy 
+Input:[1 3 7 26]
+Coin Array: [1 0 3 0]
+Number of Coins: 4
+
+Running Algorithm: Change DP 
+Input:[1 3 7 26]
+Coin Array: [1 0 3 0]
+Number of Coins: 4
+
